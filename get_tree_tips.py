@@ -1,7 +1,7 @@
 import re
 
 # Archivo de entrada con los árboles génicos
-input_file = "gene_trees.tre"
+input_file = "06_species_tree/gene_trees.tre"
 output_file = "mapping.txt"
 
 # Usamos un conjunto para evitar duplicados
