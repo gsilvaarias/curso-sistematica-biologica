@@ -7,8 +7,8 @@ if [[ ! -f "accesiones.txt" ]]; then
 fi
 
 # Crear un directorio para los archivos descargados
-mkdir -p fastq_downloads
-cd fastq_downloads
+mkdir -p 00_raw_reads
+cd 00_raw_reads
 
 # Leer accesiones.txt línea por línea
 while IFS=$'\t' read -r ACC NEW_NAME; do
@@ -29,4 +29,3 @@ fi
 done < ../accesiones.txt  # Leer el archivo desde el directorio padre
 
 echo "Descarga y renombrado completados."
-
