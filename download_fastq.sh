@@ -14,7 +14,7 @@ cd 00_raw_reads
 while IFS=$'\t' read -r ACC NEW_NAME; do
     echo "Descargando $ACC y renombrándolo como $NEW_NAME"
 
-    # Descargar archivos FASTQ con fastq-dump
+    # Descargar archivos FASTQ con fasterq-dump
     fasterq-dump "$ACC"
     # Comprimir los archivos fastq
     pigz "${ACC}_1.fastq"
@@ -29,6 +29,6 @@ while IFS=$'\t' read -r ACC NEW_NAME; do
     else
         echo "Advertencia: No se encontraron archivos para $ACC"
     fi
-done < ../accesiones.txt  # Leer el archivo desde el directorio padre
+done < ../accesiones.txt  # Leer el archivo desde el directorio de trabajo
 
 echo "Descarga y renombrado completados."
