@@ -30,7 +30,7 @@ echo "Árboles génicos concatenados en $GENE_TREES_FILE"
 python get_tree_tips.py
 
 # Ejecuta ASTRAL-Pro 3 en C++ para inferir el árbol de especies
-./astral-pro3 -i "$GENE_TREES_FILE" -o "$OUTPUT_DIR/species_tree.tre" -a mapping.txt -u 3
+astral-pro3 -i "$GENE_TREES_FILE" -o "$OUTPUT_DIR/species_tree.tre" -a mapping.txt -u 3
 
 echo "Análisis completado. Árbol de especies guardado en $OUTPUT_DIR/species_tree.tre"
 
