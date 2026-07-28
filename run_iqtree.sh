@@ -18,7 +18,7 @@ for FILE_PATH in "$INPUT_DIR"*.fna; do
     echo "Procesando alineamiento en $FILE"
     
     # Ejecuta IQ-TREE en el archivo correspondiente
-    iqtree2 -s "$FILE_PATH" -B 1000 -pre "$OUTPUT_DIR${FILE%.fna}"  # Quita la extensión .fna para evitar duplicaciones
+    iqtree3 -s "$FILE_PATH" -B 1000 -pre "$OUTPUT_DIR${FILE%.fna}"  # Quita la extensión .fna para evitar duplicaciones
     
     echo "Análisis completado para $FILE"
 done
