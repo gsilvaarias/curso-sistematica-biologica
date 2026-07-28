@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directorio base donde están los archivos fasta con los alineamientos
-INPUT_DIR="04_alignments/03_trimmed/04_unfiltered/01_coding_NUC/02_NT/"
+INPUT_DIR="04_alignments/03_trimmed/04_unfiltered/04_misc_DNA/01_matches/"
 # Directorio base donde quedan los archivos de salida de iqtree
 OUTPUT_DIR="05_trees/"
 
